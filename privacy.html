@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HearLingo — Privacy Policy / 隐私政策</title>
+<style>
+  body { font-family: "Segoe UI", system-ui, sans-serif; color: #1c2333; max-width: 820px;
+         margin: 0 auto; padding: 40px 24px; line-height: 1.8; font-size: 15px; }
+  h1 { font-size: 26px; } h2 { font-size: 18px; margin-top: 34px; }
+  p { margin: 10px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #dfe3ea; padding: 8px 12px; text-align: left; }
+  th { background: #f0f2f7; }
+  .updated { color: #8a93a6; font-size: 13px; }
+  a { color: #0b57d0; }
+  .lang { position: fixed; top: 14px; right: 20px; z-index: 9; }
+  .lang button { background: #0b57d0; border: none; color: #fff; padding: 7px 14px;
+                 border-radius: 8px; cursor: pointer; font-size: 13px; }
+  .en-only, .zh-only { display: none; }
+  body.show-en .en-only { display: block; }
+  body.show-zh .zh-only { display: block; }
+</style>
+</head>
+<body class="show-en show-zh">
+<div class="lang">
+  <button onclick="var b=document.body; var z=b.classList.toggle('show-zh'); b.classList.toggle('show-en', !z); this.textContent = z ? 'English' : '中文';">中文</button>
+</div>
+
+<h1>HearLingo Privacy Policy <span class="zh-only">/ 隐私政策</span></h1>
+<p class="updated">Last updated: 2026-09-22 · <span class="zh-only">最后更新：</span>2026-09-22</p>
+
+<h2>What we collect <span class="zh-only">/ 我们收集什么</span></h2>
+<p><b>Nothing.</b> <span class="zh-only"><b>什么都不收集。</b></span>
+The extension contains no analytics, no tracking, no advertising SDKs, and does not
+transmit any personal data to HearLingo developers.
+<span class="zh-only">本扩展不含分析统计、跟踪或广告组件，不向开发者传输任何个人数据。</span></p>
+
+<h2>What data leaves your device, and where <span class="zh-only">/ 哪些数据会离开你的设备</span></h2>
+<p><span class="en-only">When you use HearLingo, video subtitle text is processed as follows:</span>
+<span class="zh-only">使用译听时，视频字幕文本的处理方式如下：</span></p>
+<table>
+  <tr><th>Function <span class="zh-only">功能</span></th><th>Processor <span class="zh-only">处理方</span></th><th>Data sent <span class="zh-only">发送数据</span></th><th>Notes <span class="zh-only">说明</span></th></tr>
+  <tr><td><span class="en-only">Speech synthesis</span><span class="zh-only">语音合成</span></td>
+      <td>Microsoft Edge TTS</td><td>Subtitle text <span class="zh-only">字幕文本</span></td>
+      <td><span class="en-only">Subject to Microsoft Privacy Statement</span><span class="zh-only">受微软隐私声明约束</span></td></tr>
+  <tr><td><span class="en-only">Translation</span><span class="zh-only">翻译</span></td>
+      <td>Google, MyMemory; optional DeepL/Baidu</td><td>Subtitle text <span class="zh-only">字幕文本</span></td>
+      <td><span class="en-only">Subject to each provider's policy</span><span class="zh-only">受各服务商政策约束</span></td></tr>
+  <tr><td><span class="en-only">OCR</span><span class="zh-only">硬字幕识别</span></td>
+      <td><span class="en-only">100% local (RapidOCR)</span><span class="zh-only">100% 本地（RapidOCR）</span></td>
+      <td><span class="en-only">Nothing leaves your device</span><span class="zh-only">不离开你的设备</span></td>
+      <td><span class="en-only">Frames never leave your computer</span><span class="zh-only">画面帧不离开你的电脑</span></td></tr>
+  <tr><td><span class="en-only">Update check</span><span class="zh-only">更新检查</span></td>
+      <td><span class="en-only">Static manifest</span><span class="zh-only">静态清单</span></td>
+      <td><span class="en-only">Anonymous headers only</span><span class="zh-only">仅匿名请求头</span></td>
+      <td><span class="en-only">No identifiers, no telemetry</span><span class="zh-only">无标识、无遥测</span></td></tr>
+</table>
+
+<h2>Local storage <span class="zh-only">/ 本地存储</span></h2>
+<p><span class="en-only">Settings and caches are stored locally on your device. Remove everything by
+uninstalling the extension and deleting the companion app data folder.</span>
+<span class="zh-only">设置与缓存存储在你的设备本地。卸载扩展并删除伴侣程序数据文件夹即可全部清除。</span></p>
+
+<h2>Companion app (Windows) <span class="zh-only">/ 伴侣程序</span></h2>
+<p><span class="en-only">The optional companion app runs a local service on 127.0.0.1 (your machine only).
+It bundles the OCR engine and performs speech synthesis and translation requests on behalf
+of the extension.</span>
+<span class="zh-only">可选的伴侣程序在本机 127.0.0.1 上运行本地服务（仅本机可访问），内含 OCR 引擎，
+代表扩展执行语音合成与翻译请求。</span></p>
+
+<h2>Service accuracy and third-party services <span class="zh-only">/ 服务准确性与第三方服务</span></h2>
+<p><span class="en-only">HearLingo is an <b>assistive tool</b>. Speech recognition, machine translation,
+and speech synthesis are performed by third-party services and local models. They may be
+<b>inaccurate, incomplete, or wrong</b>, and their output is provided <b>for reference only</b> —
+it is not professional translation and should not be relied upon for legal, medical, financial,
+or other consequential decisions.</span>
+<span class="zh-only">译听为<b>辅助工具</b>。语音识别、机器翻译与语音合成由第三方服务和本地模型完成，
+可能<b>不准确、不完整或有误</b>，输出<b>仅供参考</b>——不构成专业翻译，不应作为法律、医疗、
+财务等重大决策的依据。</span></p>
+<p><span class="en-only">The free endpoints and models used by HearLingo are operated by third parties.
+Their availability, rate limits, response quality, and continued existence are <b>outside
+HearLingo's control</b> and may change or be discontinued at any time without notice.
+HearLingo is <b>not affiliated with</b> these providers.</span>
+<span class="zh-only">译听使用的免费接口与模型由第三方运营，其可用性、限流、响应质量与持续存在
+<b>不受译听控制</b>，可能随时变更或停止。译听与这些服务商<b>无隶属关系</b>。</span></p>
+<p><span class="en-only"><b>Reading timeliness</b> also depends on your network connection, third-party
+service response speed, and your computer's performance.</span>
+<span class="zh-only"><b>朗读的及时性</b>还取决于您的网络连接、第三方服务响应速度与电脑性能。</span></p>
+<p><span class="en-only">To the maximum extent permitted by law, HearLingo's developers are not liable
+for errors, omissions, service interruptions, or any damages arising from reliance on the
+translated or synthesized output.</span>
+<span class="zh-only">在法律允许的最大范围内，译听开发者不对因依赖译文或合成语音产生的错误、
+遗漏、服务中断或任何损害承担责任。</span></p>
+
+<h2>Children's privacy <span class="zh-only">/ 儿童隐私</span></h2>
+<p><span class="en-only">HearLingo does not knowingly collect any data from any user, including
+children under 13.</span>
+<span class="zh-only">译听不有意收集任何用户（包括 13 岁以下儿童）的数据。</span></p>
+
+<h2>Changes <span class="zh-only">/ 政策变更</span></h2>
+<p><span class="en-only">Material changes will be published at this page with an updated date.</span>
+<span class="zh-only">重大变更将在本页面发布并更新日期。</span></p>
+
+<h2>Contact <span class="zh-only">/ 联系我们</span></h2>
+<p><span class="en-only">For questions or issues, please
+<a href="https://github.com/hq-i/hearlingo-site/issues">open an issue on GitHub</a>.</span>
+<span class="zh-only">如有问题或建议，请在
+<a href="https://github.com/hq-i/hearlingo-site/issues">GitHub 仓库提交 Issue</a>。</span></p>
+</body>
+</html>
