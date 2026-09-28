@@ -54,14 +54,32 @@
     <p class="desc en">The local engine that powers speech synthesis, translation and
       hard-subtitle reading (OCR). Runs on your machine only — video frames never leave it.</p>
     <p class="desc zh">提供语音合成、翻译与硬字幕识别（OCR）的本地引擎。仅在本机运行——画面帧不会离开你的电脑。</p>
-    <p class="meta en">Windows 10/11 x64 · ~107 MB zip · v0.1.0</p>
+    <p class="meta en">Windows 10/11 x64 &amp; macOS 12+ (Apple Silicon) · v0.1.0</p>
+    <p class="meta zh">Windows 10/11 x64 与 macOS 12+（Apple Silicon）· v0.1.0</p>
     <a class="btn btn-primary en" href="https://github.com/hq-i/hearlingo-site/releases/download/v0.1.0/HearLingoService-windows-x64.zip">Download for Windows</a>
-    <a class="btn btn-ghost en" href="#">macOS — coming soon</a>
+    <a class="btn btn-primary en" href="https://github.com/hq-i/hearlingo-site/releases/download/v0.1.0/HearLingoService-macOS-arm64.zip">Download for macOS (Apple Silicon)</a>
     <a class="btn btn-primary zh" href="https://github.com/hq-i/hearlingo-site/releases/download/v0.1.0/HearLingoService-windows-x64.zip">下载 Windows 版</a>
-    <a class="btn btn-ghost zh" href="#">macOS —— 即将推出</a>
-    <p class="steps en">1. Extract &amp; run HearLingoService.exe &nbsp; 2. Keep the window open &nbsp;
-       3. Allow it through the firewall on first run.</p>
-    <p class="steps zh">1. 解压并运行 HearLingoService.exe &nbsp; 2. 保持窗口开启 &nbsp; 3. 首次运行允许防火墙。</p>
+    <a class="btn btn-primary zh" href="https://github.com/hq-i/hearlingo-site/releases/download/v0.1.0/HearLingoService-macOS-arm64.zip">下载 macOS 版（Apple Silicon）</a>
+    <p class="steps en"><b>Windows:</b> 1. Extract &amp; run HearLingoService.exe &nbsp;
+       2. If Windows shows "Windows protected your PC", click <b>More info</b> →
+       <b>Run anyway</b> (first-download notice for apps without a long install
+       history) &nbsp; 3. Allow it through the firewall — it runs silently in the
+       background (no window, no dialogs); you're ready when the floating ball
+       turns green.</p>
+    <p class="steps zh"><b>Windows：</b>1. 解压并运行 HearLingoService.exe &nbsp;
+       2. 若提示「已保护你的电脑」，点 <b>更多信息</b> → <b>仍要运行</b>（首次下载、
+       无长期安装记录的应用都会如此，并非发现病毒） &nbsp; 3. 首次运行允许防火墙——
+       服务静默后台运行（无窗口无弹窗），悬浮球变绿即可朗读。</p>
+    <p class="steps en"><b>macOS:</b> 1. Unzip &amp; drag HearLingoService.app anywhere,
+       double-click it &nbsp; 2. First launch: right-click the app → <b>Open</b> →
+       <b>Open</b> (Gatekeeper notice for unsigned apps — not a virus finding; if it
+       says "damaged", run <b>xattr -cr HearLingoService.app</b> in Terminal) &nbsp;
+       3. Allow the firewall — it runs silently; the floating ball turns green
+       when ready. Details in the README inside the zip.</p>
+    <p class="steps zh"><b>macOS：</b>1. 解压并把 HearLingoService.app 拖到任意位置，双击运行 &nbsp;
+       2. 首次启动：右键点 App → <b>打开</b> → <b>打开</b>（未签名应用的 Gatekeeper 提示，
+       并非发现病毒；若提示「已损坏」，在终端执行 <b>xattr -cr HearLingoService.app</b>） &nbsp;
+       3. 首次运行允许防火墙——服务静默后台运行，悬浮球变绿即可朗读。</p>
   </div>
 
   <!-- ② ASR 语音识别包（实验室） -->
